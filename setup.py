@@ -4,10 +4,13 @@ from setuptools import setup, find_packages
 
 packages = find_packages()
 requirements = [
-    "torch==1.6.0",
-    "torchvision==0.7.0",
+    # "torch==1.6.0",
+    # "torchvision==0.7.0",
+    "Cython",
+    "more_itertools",
+    "emoji",
     "pillow>=4.1.1",
-    "fairseq>=0.10.2",
+    "fairseq==0.10.0", # 0.10.2 gives error: [Errno 1] Operation not permitted: 'fairseq/examples' in macos
     "transformers>=4.0.0",
     "sentence_transformers>=0.4.1.2",
     "nltk>=3.5",
